@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kилипатвиль — город Хаги Ваги!</title>
+    <style>
+        /* Яркие стили */
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+        
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: #ffccf5;
+            color: #8a2be2;
+            margin: 0;
+            padding: 0;
+            animation: bg-pulse 8s infinite;
+        }
+        
+        @keyframes bg-pulse {
+            0% { background-color: #ffccf5; }
+            50% { background-color: #ffb6e6; }
+            100% { background-color: #ffccf5; }
+        }
+        
+        header {
+            background: linear-gradient(45deg, #ff00aa, #ff69b4);
+            padding: 30px;
+            text-align: center;
+            border-bottom: 10px dotted #fff;
+        }
+        
+        h1 {
+            font-family: 'Rubik Bubbles', cursive;
+            color: white;
+            font-size: 4em;
+            text-shadow: 5px 5px 0 #8a2be2;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 30px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+        }
+        
+        h2 {
+            color: #ff00aa;
+            font-size: 2.5em;
+            margin-top: 0;
+            text-decoration: underline wavy;
+        }
+        
+        img {
+            max-width: 100%;
+            border: 8px solid #ff69b4;
+            border-radius: 20px;
+            margin: 15px 0;
+            transition: transform 0.3s;
+        }
+        
+        img:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #ff00aa;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: #8a2be2;
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(45deg, #ff69b4, #8a2be2);
+            color: white;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в Kилипатвиль!</h1>
+        <p style="color: white; font-size: 1.5em;">Город вечного праздника, Хаги Ваги и свободы!</p>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>🌈 Что такое Kилипатвиль?</h2>
+            <p>Kилипатвиль — это уникальный город в Minecraft, где:</p>
+            <ul>
+                <li>🎪 Все жители носят костюмы Хаги Ваги</li>
+                <li>🏗 Можно строить что угодно без ограничений</li>
+                <li>🎡 Каждый день — это вечеринка</li>
+                <li>🍭 Архитектура в стиле "сладостного безумия"</li>
+            </ul>
+            
+            <img src="https://i.imgur.com/JqYeZKL.png" alt="Вид на Kилипатвиль" title="Наш прекрасный город!">
+        </section>
+        
+        <section class="section">
+            <h2>🧸 Униформа жителей</h2>
+            <p>Наша официальная форма включает:</p>
+            <div class="gallery">
+                <img src="https://i.imgur.com/XyZ1234.png" alt="Костюм Хаги Ваги">
+                <img src="https://i.imgur.com/AbCdEfG.png" alt="Вариант костюма">
+                <img src="https://i.imgur.com/HiJkLmN.png" alt="Ещё один дизайн">
+            </div>
+            <p>Но можно создавать ЛЮБЫЕ вариации — главное, чтобы было весело!</p>
+        </section>
+        
+        <section class="section">
+            <h2>🏆 Почему наш город лучший?</h2>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <img src="https://i.imgur.com/QrStUvW.png" alt="Плюсы города" style="width: 300px;">
+                <div>
+                    <h3>Наши преимущества:</h3>
+                    <ul>
+                        <li>🔹 Нет гриферов — только дружелюбные игроки</li>
+                        <li>🔹 Сервер 24/7 с минимальным лагом</li>
+                        <li>🔹 Еженедельные конкурсы строительства</li>
+                        <li>🔹 Своя экономика с игровой валютой — "Пончики"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" style="text-align: center;">
+            <h2>🚀 Присоединяйся к нам!</h2>
+            <p>Стань частью самого безумного города в Minecraft!</p>
+            
+            <a href="#" class="btn">IP: play.kilipatvil.mc</a>
+            <a href="#" class="btn">Дискорд</a>
+            <a href="#" class="btn">Гайд для новичков</a>
+            
+            <img src="https://i.imgur.com/ZyXwVuT.png" alt="Присоединяйся!" style="max-width: 600px;">
+        </section>
+    </div>
+    
+    <footer>
+        <p>Kилипатвиль © 2023 | Сайт создан с ❤️ для фанатов Хаги Ваги</p>
+        <p>Все изображения взяты из открытых источников</p>
+    </footer>
+</body>
+</html>
